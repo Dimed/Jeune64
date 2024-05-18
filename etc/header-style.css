@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'Eurostile-medium';
+	src: url(‘../../../data/etc/font-euro.ttf) format(‘truetype’)
+}
+
+body {
+	font-family: 'Eurostile-medium', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    font-family: "font1", sans-serif,;
+}
+
+.topbar {
+	height:200px;
+    background-color: #c6c6c6;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+#ball {
+    background: radial-gradient(circle at 400px 230px , white  2%,  #c6c6c6 17%);
+}
+
+.right-text{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 50px;
+}
+
+
+#qui {
+    font-size: 100px;
+    font-family: 'Eurostile-medium', sans-serif,;
+    color: white;
+    margin-right: -20px;
+}
+
+#Pour {
+    color: white;
+    font-size: 50px;
+}
+
+#logo {
+    width : 270px;
+    height : 180px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu {
+    width: 800px;
+    height: 40px;
+    text-align : center;
+    background-color: #c6c6c6;
+    margin: 0 auto;
+    padding-top: 20px;
+    background: radial-gradient(circle at 400px 230px , white  2%,  #c6c6c6 17%);
+}
+
+.button-menu{
+    font-size: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    margin : 10px;
+}
+
+#ball2 {
+    background: radial-gradient(circle at 300px 060px , white  0%,  #c6c6c6 25%);
+
+    #J {
+        color: rgb(90.2%,0%,49.4%);
+        text-decoration: none;
+        &:hover{
+            background-color:  rgb(90.2%,0%,49.4%);
+            color: white;
+        }
+    }
+
+    #R {
+        color: rgb(19, 165, 56);
+        text-decoration: none;
+        &:hover{
+            background-color:  rgb(19, 165, 56);
+            color: white;
+        }
+    }
+
+    #C {
+        color: rgb(0, 159, 227);
+        text-decoration: none;
+        &:hover{
+            background-color: rgb(0, 159, 227);
+            color: white;
+        }
+    }
+
+    #P {
+        color: rgb(112,111,111);
+        text-decoration: none;
+        &:hover{
+            background-color: rgb(112,111,111);
+            color: white;
+        }
+    }
+}
+
+
+#part {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.onJ{
+    background-color:  rgb(90.2%,0%,49.4%) !important;
+    color: white !important;
+
+}
+
+.onR{
+    background-color:  rgb(19, 165, 56) !important;
+    color: white !important;
+}
+
+
+.onC{
+    background-color: rgb(0, 159, 227) !important;
+    color: white !important;
+}
+
+
+.onP{
+    background-color: rgb(112,111,111) !important;
+    color: white !important;
+}

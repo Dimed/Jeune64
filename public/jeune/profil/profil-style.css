@@ -1,0 +1,202 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
+#left {
+    width: 200px;
+}
+
+#left label {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,0,126,1) 38%);
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    width: 100%;
+    display: block;
+    padding-right: 20px;
+    margin: 0;
+}
+
+#left textarea {
+    width: 230px;
+    display: block;
+    height: 300px;
+    resize: none;
+    margin: 0;
+    outline: none;
+    border: none;
+    background: radial-gradient(circle at 10px 10px, rgba(255,248,251,1) 0%, rgba(252,235,244,1) 21%);
+    padding: 10px;
+}
+
+#center {
+    width: 550px !important;
+}
+
+#center > fieldset {
+    border: 1px solid rgba(230,0,126,1);
+    width: 100%;
+    height: 199%;
+    display: block;
+    padding: 7px 15px;
+}
+
+#center .form-header > h2 {
+    color: rgba(230,0,126,1);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#center .form-body {
+    margin: 20px auto;
+    width: 100%;
+}
+
+#center .form-body > .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px auto;
+    width: 100%;
+}
+
+#center .form-group > label {
+    width: fit-content;
+    flex: 0 0 fit-content;
+    font-size: 28px;
+    color: rgba(230,0,126,1);
+}
+
+#center .form-group > input {
+    display: block;
+    border: none;
+    width: auto;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px dotted rgba(230,0,126,1);
+    flex: 1;
+    outline: none;
+}
+
+#center .form-footer {
+    margin: 20px auto 10px;
+    width: 100%;
+}
+
+#center .form-footer > input {
+    display: block;
+    padding: 10px 29px;
+    background-color: rgba(230,0,126,1);
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    }
+
+#right {
+    width: 200px;
+}
+
+#right > label {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1px;
+    color: rgba(230,0,126,1);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#right fieldset {
+    border: none;
+    width: 240px;
+    display: block;
+    height: 300px;
+    resize: none;
+    margin: 0;
+    outline: none;
+    border: none;
+    background: radial-gradient(circle at 10px 10px, rgba(255,248,251,1) 0%, rgba(252,235,244,1) 21%);
+    padding: 00px;
+    padding-top: 0;
+}
+
+#right fieldset div {
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(230,0,126,1) 38%);
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    width: 92%;
+    padding-right: 10px;
+    display: block;
+    margin: 0;
+}
+
+#right fieldset input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 0;
+}
+
+
+
+input[type="checkbox"].check::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #000;
+    margin-right: 10px;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+input[type="checkbox"].check:checked::before {
+    content: url('../../../data/etc/checked.png');
+    display: block;
+    text-align: center;
+    padding: 0;
+    transform: translate(-30px, -22px);
+    border: none;
+    background-color: transparent;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+input[type="checkbox"].check::after {
+    appearance: none;
+}
+
+.ans{
+    font-family: 'Eurostile-medium', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(230,0,126,1);
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
+
+}

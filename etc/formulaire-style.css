@@ -1,0 +1,17 @@
+.logout{
+    display: block;
+    padding: 10px 29px;
+    border-radius: 5px;
+    background-color: rgba(230,0,126,1);
+    color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px;
+    position: absolute;
+    left:5vh;
+    bottom: 5vh;
+
+}

@@ -1,0 +1,59 @@
+<script>
+    // Wrap the code inside a function
+    function initializeMenu() {
+        var url = window.location.href;
+        var lastPart = url.substr(url.lastIndexOf('/') + 1);
+
+        // Ajout des classes et modifications en fonction de la valeur de lastPart
+        if (lastPart === "partenaire.php") {
+            document.getElementById("P").classList.add("onP");
+            var quiElement = document.getElementById("qui");
+            quiElement.textContent = "PARTENAIRE";
+            quiElement.style.color = "rgb(112,111,111)";
+            var pourElement = document.getElementById("Pour");
+            pourElement.textContent = "";
+        }
+        else if (lastPart === "presentation.php") {
+            var quiElement = document.getElementById("qui");
+            quiElement.textContent = "";
+            var pourElement = document.getElementById("Pour");
+            pourElement.innerHTML = "<br><br> Pour faire de l’engagement une valeur";
+        }
+        else if (lastPart === "profil.php" || lastPart === "register.php") {
+            document.getElementById("J").classList.add("onJ");
+        }
+        else if (lastPart === "askRef.php" || lastPart === "seeRef.php" || url.includes("validate.php")) {
+            document.getElementById("R").classList.add("onR");
+        }
+        else if (url.includes("seeCons.php") || lastPart === "mailCons.php" || lastPart === "sendCons.php") {
+            document.getElementById("C").classList.add("onC");
+        }
+    }
+
+    // Call the function after the page has loaded
+    window.addEventListener("load", initializeMenu);
+</script>
+
+
+
+
+
+<nav>
+    <div class="topbar" id="ball">
+        <a href="../../../public/visiteur/etc/presentation.php">
+            <img id="logo" src="../../../data/icon/referent.png" alt="Logo referent"/>
+        </a>
+        <div class="right-text">
+            <a id="qui" style="color: #c1d100;">REFERENT</a>  <!--  à mettre en variable selon la page -->
+            <a id="Pour" >Je confirme la valeur de ton engagement</a> <!--  à mettre en variable selon la page -->
+        </div>
+    </div>
+</nav>
+
+<nav class="menu" id="ball2" >
+    <a id="J" href="" class="button-menu" >JEUNE</a>
+    <a id="R" ref="" class="button-menu" >RÉFÉRENT</a>
+    <a id="C" href="" class="button-menu" >CONSULTANT</a>
+    <a id="P" href="" class="button-menu" >PARTENAIRES</a>
+
+</nav>
